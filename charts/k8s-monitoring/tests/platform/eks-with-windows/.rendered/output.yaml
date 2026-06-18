@@ -1477,7 +1477,7 @@ data:
     otelcol.exporter.prometheus "grafana_cloud_metrics" {
       add_metric_suffixes = true
       resource_to_telemetry_conversion = false
-      keep_identifying_resource_attributes = false
+      keep_identifying_resource_attributes = true
       forward_to = [prometheus.remote_write.grafana_cloud_metrics.receiver]
     } // otelcol.exporter.prometheus "grafana_cloud_metrics"
     
@@ -1706,7 +1706,7 @@ data:
     otelcol.exporter.prometheus "grafana_cloud_metrics" {
       add_metric_suffixes = true
       resource_to_telemetry_conversion = false
-      keep_identifying_resource_attributes = false
+      keep_identifying_resource_attributes = true
       forward_to = [prometheus.remote_write.grafana_cloud_metrics.receiver]
     } // otelcol.exporter.prometheus "grafana_cloud_metrics"
     

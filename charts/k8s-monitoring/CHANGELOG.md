@@ -6,6 +6,7 @@
 *   Introduce Data Processors, a method for transforming data between features and destinations. Initial processors include the `custom` processor.
 *   Add the `kubernetesEnrichment` data processor, which copies Kubernetes namespace and pod labels and annotations onto metrics, logs, traces, and profiles across all supported ecosystems. (@petewall)
 *   Deprecate the `metricEnrichment` option on the Prometheus destination in favor of the `kubernetesEnrichment` data processor. The option remains functional. (@petewall)
+*   Default `openTelemetryConversion.keepIdentifyingResourceAttributes` to `true` for `otelcol.exporter.prometheus` component. (#2722) (@rlankfo)
 
 ## 4.1.7
 
